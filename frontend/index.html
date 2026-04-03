@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Resume Ranker</title>
+  </head>
+
+  <body>
+
+  <div class="container">
+    
+    <h1>🤖 AI Resume Ranking System</h1>
+    <p class="subtitle">Rank resumes using NLP-based similarity</p>
+
+    <!-- Job Description -->
+    <label>Enter Job Description:</label>
+    <textarea id="jobDesc" placeholder="e.g. Python developer with ML skills"></textarea>
+    <h3>Add Resume</h3>
+
+<input type="text" id="resumeInput" placeholder="Enter resume text">
+
+<button onclick="addResume()">➕ Add Resume</button>
+
+<ul id="resumeList"></ul>
+    <!-- Upload (UI only) -->
+    <label>Upload Resume (Optional):</label>
+    <input type="file" />
+
+    <button onclick="rank()">🔍 Rank Resumes</button>
+
+    <!-- Loading -->
+    <p id="loading" style="display:none;">⏳ Processing...</p>
+
+    <!-- Results -->
+    <h3>📊 Top Results</h3>
+    <ul id="results"></ul>
+
+  </div>
+
+  <script type="module" src="/src/main.js"></script>
+
+</body>
+</html>
